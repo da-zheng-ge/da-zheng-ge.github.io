@@ -176,7 +176,7 @@ var themeMenus = {};
         
   
     <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2019/04/11/jquery学习笔记/">jquery学习笔记</a>
+      <a class="article-title" href="/2019/04/11/jquery学习笔记/">Jquery学习笔记</a>
     </h1>
   
 
@@ -185,15 +185,15 @@ var themeMenus = {};
     <div class="article-meta">
       
 	Posted on <a href="/2019/04/11/jquery学习笔记/" class="article-date">
-	  <time datetime="2019-04-11T03:46:17.000Z" itemprop="datePublished">April 11, 2019</time>
+	  <time datetime="2019-04-11T02:50:54.000Z" itemprop="datePublished">April 11, 2019</time>
 	</a>
 
       
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="jquery学习笔记"><a href="#jquery学习笔记" class="headerlink" title="jquery学习笔记"></a>jquery学习笔记</h1><p>[TOC]</p>
-<h2 id="选择器"><a href="#选择器" class="headerlink" title="选择器"></a>选择器</h2><ul>
+        <h1 id="jquery学习笔记"><a href="#jquery学习笔记" class="headerlink" title="jquery学习笔记"></a>jquery学习笔记</h1><h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3><p><a href="#1">选择器</a><br><a href="#2">操作样式</a><br><a href="#3">出现和消失动画</a><br><a href="#4">获取内容</a><br><a href="#5">操作DOM</a><br><a href="#6">事件</a><br><a href="#7">操作属性</a><br><a href="#8">表单及输入</a><br><a href="#9">Ajax</a></p>
+<h2 id="1-选择器"><a href="#1-选择器" class="headerlink" title="1.选择器"></a><a id="1">1.选择器</a></h2><ul>
 <li><h3 id="‘-id’"><a href="#‘-id’" class="headerlink" title="$(‘#id’)"></a>$(‘#id’)</h3><p>选择id =&gt; document.getElementById(‘id’)</p>
 </li>
 <li><h3 id="‘-class’"><a href="#‘-class’" class="headerlink" title="$(‘.class’)"></a>$(‘.class’)</h3><p>选择class =&gt; document.getElementsByClassName(‘class’)</p>
@@ -203,10 +203,10 @@ var themeMenus = {};
 <li><h3 id="‘-id-tag’"><a href="#‘-id-tag’" class="headerlink" title="$(‘#id tag’)"></a>$(‘#id tag’)</h3><p>选择id里的子类标签</p>
 </li>
 </ul>
-<h2 id="操作样式"><a href="#操作样式" class="headerlink" title="操作样式"></a>操作样式</h2><ul>
+<h2 id="2-操作样式"><a href="#2-操作样式" class="headerlink" title="2.操作样式"></a><a id="2">2.操作样式</a></h2><ul>
 <li><h3 id="单个样式"><a href="#单个样式" class="headerlink" title="单个样式"></a>单个样式</h3></li>
 </ul>
-<p>$(‘#id’).css(‘color’,’blue’）</p>
+<p>$(‘#id’).css(‘color’,’blue’)</p>
 <ul>
 <li><h3 id="多个样式"><a href="#多个样式" class="headerlink" title="多个样式"></a>多个样式</h3></li>
 </ul>
@@ -215,51 +215,40 @@ var themeMenus = {};
 <li><h3 id="‘-id’-addClass-‘class’-添加类"><a href="#‘-id’-addClass-‘class’-添加类" class="headerlink" title="$(‘#id’)addClass(‘class’)添加类"></a>$(‘#id’)addClass(‘class’)添加类</h3></li>
 <li><h3 id="‘-id’-removeClass-‘class’-移除类"><a href="#‘-id’-removeClass-‘class’-移除类" class="headerlink" title="$(‘#id’)removeClass(‘class’)移除类"></a>$(‘#id’)removeClass(‘class’)移除类</h3></li>
 </ul>
-<h2 id="出现和消失动画"><a href="#出现和消失动画" class="headerlink" title="出现和消失动画"></a>出现和消失动画</h2><ul>
-<li><h3 id="‘-id’-hide-和-‘-id’-show"><a href="#‘-id’-hide-和-‘-id’-show" class="headerlink" title="$(‘#id’).hide()  和 $(‘#id’).show ()"></a>$(‘#id’).hide()  和 $(‘#id’).show ()</h3></li>
-<li><h3 id="‘-id’-fadeOut-和-‘-id’-fadein-可设置时间"><a href="#‘-id’-fadeOut-和-‘-id’-fadein-可设置时间" class="headerlink" title="$(‘#id’).fadeOut()  和 $(‘#id’).fadein(可设置时间)"></a>$(‘#id’).fadeOut()  和 $(‘#id’).fadein(可设置时间)</h3></li>
-<li><h3 id="‘-id’-slideUp-可设置时间-隐藏"><a href="#‘-id’-slideUp-可设置时间-隐藏" class="headerlink" title="$(‘#id’).slideUp(可设置时间) 隐藏"></a>$(‘#id’).slideUp(可设置时间) 隐藏</h3></li>
-<li><h3 id="‘-id’-slideDown-显示"><a href="#‘-id’-slideDown-显示" class="headerlink" title="$(‘#id’).slideDown() 显示"></a>$(‘#id’).slideDown() 显示</h3></li>
+<h2 id="3-出现和消失动画"><a href="#3-出现和消失动画" class="headerlink" title="3.出现和消失动画"></a><a id="3">3.出现和消失动画</a></h2><ul>
+<li><h3 id="39-id-39-hide-和-39-id-39-show"><a href="#39-id-39-hide-和-39-id-39-show" class="headerlink" title="$(&#39;#id&#39;).hide() 和 $(&#39;#id&#39;).show()"></a><code>$(&#39;#id&#39;).hide() 和 $(&#39;#id&#39;).show()</code></h3></li>
+<li><h3 id="39-id-39-fadeOut-和-39-id-39-fadein-可设置时间"><a href="#39-id-39-fadeOut-和-39-id-39-fadein-可设置时间" class="headerlink" title="$(&#39;#id&#39;).fadeOut() 和 $(&#39;#id&#39;).fadein(可设置时间)"></a><code>$(&#39;#id&#39;).fadeOut() 和 $(&#39;#id&#39;).fadein(可设置时间)</code></h3></li>
+<li><h3 id="39-id-39-slideUp-可设置时间-隐藏"><a href="#39-id-39-slideUp-可设置时间-隐藏" class="headerlink" title="$(&#39;#id&#39;).slideUp(可设置时间) 隐藏"></a><code>$(&#39;#id&#39;).slideUp(可设置时间) 隐藏</code></h3></li>
+<li><h3 id="39-id-39-slideDown-显示"><a href="#39-id-39-slideDown-显示" class="headerlink" title="$(&#39;#id&#39;).slideDown() 显示"></a><code>$(&#39;#id&#39;).slideDown() 显示</code></h3></li>
 </ul>
-<h2 id="获取内容"><a href="#获取内容" class="headerlink" title="获取内容"></a>获取内容</h2><ul>
+<h2 id="4-获取内容"><a href="#4-获取内容" class="headerlink" title="4.获取内容"></a><a id="4">4.<a id="head">获取内容</a></a></h2><ul>
 <li><h3 id="‘-id’-text"><a href="#‘-id’-text" class="headerlink" title="$(‘#id’).text()"></a>$(‘#id’).text()</h3></li>
 <li><h3 id="‘-id’-text-‘替换的内容’"><a href="#‘-id’-text-‘替换的内容’" class="headerlink" title="$(‘#id’).text(‘替换的内容’)"></a>$(‘#id’).text(‘替换的内容’)</h3></li>
 <li><h3 id="‘-id’-html-可以获取到里面的标签和内容"><a href="#‘-id’-html-可以获取到里面的标签和内容" class="headerlink" title="$(‘#id’).html()可以获取到里面的标签和内容"></a>$(‘#id’).html()可以获取到里面的标签和内容</h3></li>
 </ul>
-<h2 id="操作DOM"><a href="#操作DOM" class="headerlink" title="操作DOM"></a>操作DOM</h2><ul>
-<li><h3 id="追加元素"><a href="#追加元素" class="headerlink" title="追加元素"></a>追加元素</h3><p>$(‘#id’).append(‘<div></div>‘)  js代码：</p>
-<div id="div1"><br><p id="p1">这是一个段落。</p><br><p id="p2">这是另一个段落。</p><br></div>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var para=document.createElement(&quot;p&quot;);</span><br><span class="line">var node=document.createTextNode(&quot;这是新段落。&quot;);</span><br><span class="line">para.appendChild(node);</span><br><span class="line"></span><br><span class="line">var element=document.getElementById(&quot;div1&quot;);</span><br><span class="line">element.appendChild(para);</span><br></pre></td></tr></table></figure>
+<h2 id="5-操作DOM"><a href="#5-操作DOM" class="headerlink" title="5.操作DOM"></a><a id="5">5.操作DOM</a></h2><ul>
+<li><h3 id="追加元素"><a href="#追加元素" class="headerlink" title="追加元素"></a>追加元素</h3><p><code>$(&#39;#id&#39;).append(&#39;&lt;div&gt;&lt;/div&gt;&#39;)js代码：</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=&quot;div1&quot;&gt;</span><br><span class="line">&lt;p id=&quot;p1&quot;&gt;这是一个段落。&lt;/p&gt;</span><br><span class="line">&lt;p id=&quot;p2&quot;&gt;这是另一个段落。&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">var para=document.createElement(&quot;p&quot;);</span><br><span class="line">var node=document.createTextNode(&quot;这是新段落。&quot;);</span><br><span class="line">para.appendChild(node);</span><br><span class="line"></span><br><span class="line">var element=document.getElementById(&quot;div1&quot;);</span><br><span class="line">element.appendChild(para);</span><br></pre></td></tr></table></figure>
 </li>
-</ul>
-<ul>
-<li><h3 id="向前插入元素"><a href="#向前插入元素" class="headerlink" title="向前插入元素"></a>向前插入元素</h3><p>$(‘#id’).prpend(‘<div></div>‘)   js代码:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=&quot;div1&quot;&gt;</span><br><span class="line">&lt;p id=&quot;p1&quot;&gt;This is a paragraph.&lt;/p&gt;</span><br><span class="line">&lt;p id=&quot;p2&quot;&gt;This is another paragraph.&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">var para=document.createElement(&quot;p&quot;);</span><br><span class="line">var node=document.createTextNode(&quot;This is new.&quot;);</span><br><span class="line">para.appendChild(node);</span><br><span class="line"></span><br><span class="line">var element=document.getElementById(&quot;div1&quot;);</span><br><span class="line">var child=document.getElementById(&quot;p1&quot;);</span><br><span class="line">element.insertBefore(para,child);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<li><h3 id="向前插入元素"><a href="#向前插入元素" class="headerlink" title="向前插入元素"></a>向前插入元素</h3><p><code>$(&#39;#id&#39;).prpend(&#39;&lt;div&gt;&lt;/div&gt;&#39;)js代码:</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=&quot;div1&quot;&gt;</span><br><span class="line">&lt;p id=&quot;p1&quot;&gt;This is a paragraph.&lt;/p&gt;</span><br><span class="line">&lt;p id=&quot;p2&quot;&gt;This is another paragraph.&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">var para=document.createElement(&quot;p&quot;);</span><br><span class="line">var node=document.createTextNode(&quot;This is new.&quot;);</span><br><span class="line">para.appendChild(node);</span><br><span class="line"></span><br><span class="line">var element=document.getElementById(&quot;div1&quot;);</span><br><span class="line">var child=document.getElementById(&quot;p1&quot;);</span><br><span class="line">element.insertBefore(para,child);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
 </li>
-<li><h3 id="移除元素"><a href="#移除元素" class="headerlink" title="移除元素"></a>移除元素</h3><p>$(‘#id’).remove()  js代码：</p>
-<div id="div1"><br><p id="p1">这是一个段落。</p><br><p id="p2">这是另一个段落。</p><br></div>
-
-<script>
-var parent=document.getElementById("div1");
-var child=document.getElementById("p1");
-parent.removeChild(child);
-</script>
-
+<li><h3 id="移除元素"><a href="#移除元素" class="headerlink" title="移除元素"></a>移除元素</h3><p><code>$(&#39;#id&#39;).remove()js代码：</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=&quot;div1&quot;&gt;</span><br><span class="line">&lt;p id=&quot;p1&quot;&gt;这是一个段落。&lt;/p&gt;</span><br><span class="line">&lt;p id=&quot;p2&quot;&gt;这是另一个段落。&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">var parent=document.getElementById(&quot;div1&quot;);</span><br><span class="line">var child=document.getElementById(&quot;p1&quot;);</span><br><span class="line">parent.removeChild(child);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
 <p>js代码: 必须知道父元素</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=&quot;div1&quot;&gt;</span><br><span class="line">&lt;p id=&quot;p1&quot;&gt;This is a paragraph.&lt;/p&gt;</span><br><span class="line">&lt;p id=&quot;p2&quot;&gt;This is another paragraph.&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">var parent=document.getElementById(&quot;div1&quot;);</span><br><span class="line">var child=document.getElementById(&quot;p1&quot;);</span><br><span class="line">parent.removeChild(child);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h2 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h2><ul>
+<h2 id="6-事件"><a href="#6-事件" class="headerlink" title="6.事件"></a><a id="6">6.事件</a></h2><ul>
 <li><h3 id="‘-id’-on-‘click’-function"><a href="#‘-id’-on-‘click’-function" class="headerlink" title="$(‘#id’).on(‘click’,function(){})"></a>$(‘#id’).on(‘click’,function(){})</h3><h3 id="或者-‘-id’-click-function"><a href="#或者-‘-id’-click-function" class="headerlink" title="或者$(‘#id’).click(function(){})"></a>或者$(‘#id’).click(function(){})</h3><p>js实现：document.getElementById(“myBtn”).onclick=function(){}</p>
 </li>
 <li><h3 id="‘-id’-on-‘mouseenter’-function"><a href="#‘-id’-on-‘mouseenter’-function" class="headerlink" title="$(‘#id’).on(‘mouseenter’,function(){})"></a>$(‘#id’).on(‘mouseenter’,function(){})</h3></li>
 <li><h3 id="‘-id’-on-‘mouseleave’-function"><a href="#‘-id’-on-‘mouseleave’-function" class="headerlink" title="$(‘#id’).on(‘mouseleave’,function(){})"></a>$(‘#id’).on(‘mouseleave’,function(){})</h3></li>
 </ul>
-<h2 id="操作属性"><a href="#操作属性" class="headerlink" title="操作属性"></a>操作属性</h2><ul>
-<li><h3 id="‘-id’-attr-‘href’-’www-zheng1-xyz-39-修改显性属性"><a href="#‘-id’-attr-‘href’-’www-zheng1-xyz-39-修改显性属性" class="headerlink" title="$(‘#id’).attr(‘href’,’www.zheng1.xyz&#39;)修改显性属性"></a>$(‘#id’).attr(‘href’,’<a href="http://www.zheng1.xyz&#39;)修改显性属性">www.zheng1.xyz&#39;)修改显性属性</a></h3><p>自定义的属性只能用attr来改</p>
+<h2 id="7-操作属性"><a href="#7-操作属性" class="headerlink" title="7.操作属性"></a><a id="7">7.操作属性</a></h2><ul>
+<li><h3 id="‘-id’-attr-‘href’-’www-zheng1-xyz’-修改显性属性"><a href="#‘-id’-attr-‘href’-’www-zheng1-xyz’-修改显性属性" class="headerlink" title="$(‘#id’).attr(‘href’,’www.zheng1.xyz’) 修改显性属性"></a>$(‘#id’).attr(‘href’,’www.zheng1.xyz’) 修改显性属性</h3><p>自定义的属性只能用attr来改</p>
 </li>
-<li><h3 id="‘-id’-prop-‘href’-’www-zheng1-xyz-39-修改隐性属性"><a href="#‘-id’-prop-‘href’-’www-zheng1-xyz-39-修改隐性属性" class="headerlink" title="$(‘#id’).prop(‘href’,’www.zheng1.xyz&#39;)修改隐性属性"></a>$(‘#id’).prop(‘href’,’<a href="http://www.zheng1.xyz&#39;)修改隐性属性">www.zheng1.xyz&#39;)修改隐性属性</a></h3></li>
+<li><h3 id="‘-id’-prop-‘href’-’www-zheng1-xyz’-修改隐性属性"><a href="#‘-id’-prop-‘href’-’www-zheng1-xyz’-修改隐性属性" class="headerlink" title="$(‘#id’).prop(‘href’,’www.zheng1.xyz’) 修改隐性属性"></a>$(‘#id’).prop(‘href’,’www.zheng1.xyz’) 修改隐性属性</h3></li>
 <li><h3 id="‘-id’-removeattr-‘href’-删除属性"><a href="#‘-id’-removeattr-‘href’-删除属性" class="headerlink" title="$(‘#id’).removeattr(‘href’)删除属性"></a>$(‘#id’).removeattr(‘href’)删除属性</h3><p>js代码实现属性获取：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">document.getElementsByTagName(&quot;a&quot;)[0].getAttribute(&quot;target&quot;);</span><br></pre></td></tr></table></figure>
 <p>js代码实现属性添加：</p>
@@ -278,18 +267,16 @@ document.getElementsByTagName("INPUT")[0].setAttribute("type","button");
 
 </li>
 </ul>
-<h2 id="表单及输入"><a href="#表单及输入" class="headerlink" title="表单及输入"></a>表单及输入</h2><ul>
-<li><h3 id="‘-id’-val-‘修改内容’-获取及修改input内容"><a href="#‘-id’-val-‘修改内容’-获取及修改input内容" class="headerlink" title="$(‘#id’).val(‘修改内容’) 获取及修改input内容"></a>$(‘#id’).val(‘修改内容’) 获取及修改input内容</h3><p>js实现：document.getElementById(“#id”).value = “你想要的内容”</p>
+<h2 id="8-表单及输入"><a href="#8-表单及输入" class="headerlink" title="8.表单及输入"></a><a id="8">8.表单及输入</a></h2><ul>
+<li><h3 id="‘-id’-val-‘修改内容’-获取及修改input内容"><a href="#‘-id’-val-‘修改内容’-获取及修改input内容" class="headerlink" title="\$(‘#id’).val(‘修改内容’) 获取及修改input内容"></a>\$(‘#id’).val(‘修改内容’) 获取及修改input内容</h3><p>js实现：document.getElementById(“#id”).value = “你想要的内容”</p>
 </li>
-<li><h3 id="‘-id’-focus-和-‘-id’-blur-表单点击和不点击触发"><a href="#‘-id’-focus-和-‘-id’-blur-表单点击和不点击触发" class="headerlink" title="$(‘#id’).focus() 和 $(‘#id’).blur() 表单点击和不点击触发"></a>$(‘#id’).focus() 和 $(‘#id’).blur() 表单点击和不点击触发</h3></li>
+<li><h3 id="‘-id’-focus-和-‘-id’-blur-表单点击和不点击触发"><a href="#‘-id’-focus-和-‘-id’-blur-表单点击和不点击触发" class="headerlink" title="\$(‘#id’).focus()和$(‘#id’).blur() 表单点击和不点击触发"></a>\$(‘#id’).focus()和$(‘#id’).blur() 表单点击和不点击触发</h3></li>
 </ul>
-<h2 id="Ajax"><a href="#Ajax" class="headerlink" title="Ajax"></a>Ajax</h2><ul>
-<li><h3 id="ajax全面的功能，"><a href="#ajax全面的功能，" class="headerlink" title="$ajax全面的功能，"></a>$ajax全面的功能，</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"> var configObj = &#123;</span><br><span class="line"></span><br><span class="line">       method   //数据的提交方式：get和post</span><br><span class="line"></span><br><span class="line">       url   //数据的提交路劲</span><br><span class="line"></span><br><span class="line">       async   //是否支持异步刷新，默认是true</span><br><span class="line"></span><br><span class="line">       data    //需要提交的数据</span><br><span class="line"></span><br><span class="line">       dataType   //服务器返回数据的类型，例如xml,String,Json等</span><br><span class="line"></span><br><span class="line">       success    //请求成功后的回调函数</span><br><span class="line"></span><br><span class="line">       error   //请求失败后的回调函数</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">$.ajax(configObj);//通过$.ajax函数进行调用。</span><br></pre></td></tr></table></figure>
+<h2 id="9-Ajax"><a href="#9-Ajax" class="headerlink" title="9.Ajax"></a><a id="9">9.Ajax</a></h2><ul>
+<li><h3 id="ajax全面的功能，"><a href="#ajax全面的功能，" class="headerlink" title="$ajax全面的功能，"></a>$ajax全面的功能，</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"> var configObj = &#123;</span><br><span class="line"></span><br><span class="line">       method   //数据的提交方式：get和post  </span><br><span class="line">       url   //数据的提交路劲  </span><br><span class="line">       async   //是否支持异步刷新，默认是true  </span><br><span class="line">       data    //需要提交的数据  </span><br><span class="line">       dataType   //服务器返回数据的类型，例如xml,String,Json等  </span><br><span class="line">       success    //请求成功后的回调函数 </span><br><span class="line">       error   //请求失败后的回调函数 </span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">$.ajax(configObj);//通过$.ajax函数进行调用。</span><br></pre></td></tr></table></figure>
 <p>实现过程：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$.ajax(&apos;http://api.github.com/users/&apos;+username).done(</span><br><span class="line">		function(data)&#123;</span><br><span class="line">			var dat =&apos;&lt;div&gt;用户名:&apos;+data.login+&apos;&lt;/div&gt;&apos;+</span><br><span class="line">					 &apos;&lt;div&gt;介绍：&apos;+(data.bio||&apos;无&apos;)+&apos;&lt;/div&gt;&apos;;</span><br><span class="line">					 result.html(dat);</span><br><span class="line"></span><br><span class="line">		&#125;)</span><br></pre></td></tr></table></figure>
 </li>
-</ul>
-<ul>
 <li><h3 id="load-方法"><a href="#load-方法" class="headerlink" title="load() 方法"></a>load() 方法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(&quot;#div1&quot;).load(&quot;demo_test.txt服务器端加载的文件放入被选文件&quot;);区别于get和post没有datatype</span><br></pre></td></tr></table></figure>
 </li>
 <li><h3 id="get-“test-php”-name-“John”-time-“2pm”-function-data-alert-data"><a href="#get-“test-php”-name-“John”-time-“2pm”-function-data-alert-data" class="headerlink" title="$.get(“test.php”, { name: “John”, time: “2pm” },function(data){alert(data)});"></a>$.get(“test.php”, { name: “John”, time: “2pm” },function(data){alert(data)});</h3><p>可以传参数，传递的数据少20k，不安全，可以从网页看到</p>
@@ -303,6 +290,9 @@ document.getElementsByTagName("INPUT")[0].setAttribute("type","button");
     <footer class="entry-meta entry-footer">
       
       
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jquery/">jquery</a></li></ul>
+
       
             
       
@@ -341,58 +331,6 @@ document.getElementsByTagName("INPUT")[0].setAttribute("type","button");
     <div class="article-entry" itemprop="articleBody">
       
         
-      
-    </div>
-    <footer class="entry-meta entry-footer">
-      
-      
-      
-            
-      
-    </footer>
-  </div>
-  
-</article>
-
-<!-- Table of Contents -->
-
-    
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2019/04/09/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      
-	Posted on <a href="/2019/04/09/hello-world/" class="article-date">
-	  <time datetime="2019-04-09T15:33:03.584Z" itemprop="datePublished">April 9, 2019</time>
-	</a>
-
-      
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
       
     </div>
     <footer class="entry-meta entry-footer">
@@ -534,7 +472,7 @@ document.getElementsByTagName("INPUT")[0].setAttribute("type","button");
               <div class="widget-entry-summary" style="margin: 0;">
             
 
-              <h6 style="margin: 0;"><a href="/2019/04/11/jquery学习笔记/">jquery学习笔记</a></h6>
+              <h6 style="margin: 0;"><a href="/2019/04/11/jquery学习笔记/">Jquery学习笔记</a></h6>
               <span>April 11, 2019</span>
             </div>
 
@@ -552,18 +490,6 @@ document.getElementsByTagName("INPUT")[0].setAttribute("type","button");
 
           </li>
         
-          <li class="clearfix">
-
-            
-              <div class="widget-entry-summary" style="margin: 0;">
-            
-
-              <h6 style="margin: 0;"><a href="/2019/04/09/hello-world/">Hello World</a></h6>
-              <span>April 9, 2019</span>
-            </div>
-
-          </li>
-        
       </ul>
     </div>
   </div>
@@ -573,16 +499,30 @@ document.getElementsByTagName("INPUT")[0].setAttribute("type","button");
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/jquery/">jquery</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/jquery/" style="font-size: 10px;">jquery</a>
+    </div>
+  </div>
+
   
     
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
 
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a><span class="archive-list-count">3</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a><span class="archive-list-count">2</span></li></ul>
     </div>
   </div>
 
