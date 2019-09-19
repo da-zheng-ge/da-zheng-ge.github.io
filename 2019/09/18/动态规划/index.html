@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+
+  <!-- PACE Progress Bar START -->
+  
+    <script src="https://raw.githubusercontent.com/HubSpot/pace/v1.0.2/pace.min.js"></script>
+    <link rel="stylesheet" href="https://github.com/HubSpot/pace/raw/master/themes/orange/pace-theme-flash.css">
+  
+  
+
+  <!-- PACE Progress Bar START -->
+
+  
+  <title>动态规划 | hello world</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="keywords" content="算法">
+  
+  
+  
+  
+  <meta name="description" content="动态规划王多鱼获得了一笔的奖金X，要求购买最少的商品把钱花光，即没有零钱剩下，否则奖金会被没收。输入：一个整数k：商品的种类（每个种类商品个数不限）； 第i类商品的价值a[i]； 一个整数m：奖金总额； 输出：最少商品数量 12345678910111213141516171819202122232425262728293031323334var money=11;var coins=[2,3,5">
+<meta name="keywords" content="算法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="动态规划">
+<meta property="og:url" content="https://www.zheng1.xyz/2019/09/18/动态规划/index.html">
+<meta property="og:site_name" content="hello world">
+<meta property="og:description" content="动态规划王多鱼获得了一笔的奖金X，要求购买最少的商品把钱花光，即没有零钱剩下，否则奖金会被没收。输入：一个整数k：商品的种类（每个种类商品个数不限）； 第i类商品的价值a[i]； 一个整数m：奖金总额； 输出：最少商品数量 12345678910111213141516171819202122232425262728293031323334var money=11;var coins=[2,3,5">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-09-18T13:14:03.717Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="动态规划">
+<meta name="twitter:description" content="动态规划王多鱼获得了一笔的奖金X，要求购买最少的商品把钱花光，即没有零钱剩下，否则奖金会被没收。输入：一个整数k：商品的种类（每个种类商品个数不限）； 第i类商品的价值a[i]； 一个整数m：奖金总额； 输出：最少商品数量 12345678910111213141516171819202122232425262728293031323334var money=11;var coins=[2,3,5">
+  
+  <link rel="icon" href="/css/images/favicon.ico">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="https://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+    
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz%3A200%2C300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/hiero.css">
+  <link rel="stylesheet" href="/css/glyphs.css">
+  
+    <link rel="stylesheet" href="/css/vdonate.css">
+  
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/my.css">
+  <!-- Google Adsense -->
+  
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-0123456789ABCDEF",
+          enable_page_level_ads: true
+      });
+  </script>
+  
+</head>
+</html>
+<script>
+var themeMenus = {};
+
+  themeMenus["/"] = "首页"; 
+
+  themeMenus["/about"] = "关于"; 
+
+</script>
+
+
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+
+
+  <header id="allheader" class="site-header" role="banner">
+  <div class="clearfix container">
+      <div class="site-branding">
+
+          <h1 class="site-title">
+            
+              <a href="/" rel="home">
+                <img style="margin-bottom: 10px;" width="124px" height="124px" alt="Hike News" src="https://hexo.io/logo.svg">
+              </a>
+            
+          </h1>
+
+          
+            
+          <nav id="main-navigation" class="main-navigation" role="navigation">
+            <a class="nav-open">Menu</a>
+            <a class="nav-close">Close</a>
+            <div class="clearfix sf-menu">
+
+              <ul id="main-nav" class="nmenu sf-js-enabled">
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class href="/">首页</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class href="/about">关于</a> </li>
+                    
+              </ul>
+            </div>
+          </nav>
+
+
+      </div>
+  </div>
+</header>
+
+
+  <div id="originBgDiv" style="background: #fff; width: 100%;">
+
+      <div style="max-height:600px; overflow: hidden;  display: flex; display: -webkit-flex; align-items: center;">
+        <img id="originBg" width="100%" alt src>
+      </div>
+
+  </div>
+
+  <script>
+  function setAboutIMG(){
+      var imgUrls = "css/images/pose.jpg,https://source.unsplash.com/collection/954550/1920x1080".split(",");
+      var random = Math.floor((Math.random() * imgUrls.length ));
+      if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
+        document.getElementById("originBg").src=imgUrls[random];
+      } else {
+        document.getElementById("originBg").src='/' + imgUrls[random];
+      }
+  }
+  bgDiv=document.getElementById("originBgDiv");
+  if(location.pathname.match('about')){
+    setAboutIMG();
+    bgDiv.style.display='block';
+  }else{
+    bgDiv.style.display='none';
+  }
+  </script>
+
+
+
+  <div id="container">
+    <div id="wrap">
+            
+      <div id="content" class="outer">
+        
+          <section id="main" style="float:none;"><article id="post-动态规划" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost">
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      动态规划
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	Posted on <a href="/2019/09/18/动态规划/" class="article-date">
+	  <time datetime="2019-09-18T13:13:54.000Z" itemprop="datePublished">九月 18, 2019</time>
+	</a>
+
+      
+	<span id="busuanzi_container_page_pv">
+	  本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+	</span>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="动态规划"><a href="#动态规划" class="headerlink" title="动态规划"></a>动态规划</h1><h2 id="王多鱼获得了一笔的奖金X，要求购买最少的商品把钱花光，即没有零钱剩下，否则奖金会被没收。"><a href="#王多鱼获得了一笔的奖金X，要求购买最少的商品把钱花光，即没有零钱剩下，否则奖金会被没收。" class="headerlink" title="王多鱼获得了一笔的奖金X，要求购买最少的商品把钱花光，即没有零钱剩下，否则奖金会被没收。"></a>王多鱼获得了一笔的奖金X，要求购买最少的商品把钱花光，即没有零钱剩下，否则奖金会被没收。</h2><h3 id="输入："><a href="#输入：" class="headerlink" title="输入："></a>输入：</h3><p>一个整数k：商品的种类（每个种类商品个数不限）；</p>
+<p>第i类商品的价值a[i]；</p>
+<p>一个整数m：奖金总额；</p>
+<h3 id="输出："><a href="#输出：" class="headerlink" title="输出："></a>输出：</h3><p>最少商品数量</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> money=<span class="number">11</span>;</span><br><span class="line"><span class="keyword">var</span> coins=[<span class="number">2</span>,<span class="number">3</span>,<span class="number">5</span>];</span><br><span class="line"><span class="keyword">var</span> f=[];</span><br><span class="line">f[<span class="number">0</span>]=<span class="number">0</span>;</span><br><span class="line"><span class="keyword">var</span> useMoneys=[];</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">1</span>;i&lt;=money;i++)&#123;</span><br><span class="line">        <span class="keyword">var</span> cost=<span class="number">99999</span>;</span><br><span class="line">        <span class="keyword">var</span> minNum=<span class="number">8888</span>;        </span><br><span class="line">	        <span class="keyword">for</span>(<span class="keyword">var</span> j=<span class="number">0</span>;j&lt;coins.length;j++)&#123;</span><br><span class="line">		        <span class="keyword">if</span>(i&gt;=coins[j])&#123;		        	</span><br><span class="line">		        	<span class="keyword">var</span> tmp = f[i-coins[j]]+<span class="number">1</span>;</span><br><span class="line">		                <span class="keyword">if</span>(tmp &lt; minNum)&#123;</span><br><span class="line">		                    minNum = f[i-coins[j]]+<span class="number">1</span>;</span><br><span class="line">		                    <span class="keyword">var</span> useMoney = coins[j];<span class="comment">//最后一次添加进去的面值</span></span><br><span class="line">		        			&#125;</span><br><span class="line">		    		&#125;</span><br><span class="line">							</span><br><span class="line">		&#125;</span><br><span class="line">			useMoneys[i]=useMoney;	        </span><br><span class="line">	        f[i]=minNum;	  </span><br><span class="line">	        <span class="comment">//console.log(i+"  "+ f[i]);      	         </span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(f[money]==<span class="number">99999</span>)&#123;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"找不了零"</span>);</span><br><span class="line">&#125;</span><br><span class="line"> <span class="built_in">console</span>.log(f[money]);</span><br><span class="line"> <span class="comment">//console.log(useMoneys);</span></span><br><span class="line"> <span class="built_in">console</span>.log(<span class="string">"商品的价格"</span>)</span><br><span class="line"> <span class="keyword">while</span>(money &gt; <span class="number">0</span>)&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(useMoneys[money]);</span><br><span class="line">            money -= useMoneys[money];</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+<p>最长公共子序列</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str1=<span class="string">"abcdefg"</span>;</span><br><span class="line"><span class="keyword">var</span> str2=<span class="string">"bcdkkk"</span>;</span><br><span class="line"><span class="comment">//var res=[];</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">lcs</span>(<span class="params">str1,str2</span>)</span>&#123;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">var</span> dp=[<span class="keyword">new</span> <span class="built_in">Array</span>(str1.length+<span class="number">1</span>).fill(<span class="number">0</span>)];</span><br><span class="line">	<span class="comment">//在数组里生成一个都是0的数组</span></span><br><span class="line"><span class="comment">// var dd=[];</span></span><br><span class="line"> <span class="comment">// dd[0]=[new Array(str1.length+1).fill(0)];</span></span><br><span class="line">	<span class="comment">// console.log(dd);</span></span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">1</span>;i&lt;=str1.length;i++)&#123;</span><br><span class="line">		dp[i]=[<span class="number">0</span>];</span><br><span class="line">		<span class="comment">//console.log(dp);</span></span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">var</span> j=<span class="number">1</span>;j&lt;=str2.length;j++)&#123;</span><br><span class="line">			<span class="comment">// if(i==0||j==0)&#123;</span></span><br><span class="line">			<span class="comment">// 	dp[i][j]=0;</span></span><br><span class="line">			<span class="comment">// &#125;</span></span><br><span class="line">			 <span class="keyword">if</span>(str1[i] === str2[j])&#123;</span><br><span class="line">				dp[i][j]=dp[i<span class="number">-1</span>][j<span class="number">-1</span>]+<span class="number">1</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">else</span>&#123;</span><br><span class="line">				dp[i][j]=<span class="built_in">Math</span>.max(dp[i<span class="number">-1</span>][j],dp[i][j<span class="number">-1</span>]);</span><br><span class="line">			&#125;</span><br><span class="line"><span class="comment">//res.push(printLCS(dp, str1, str2, i, j));</span></span><br><span class="line"></span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> dp[str1.length][str2.length];</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> lc=lcs(str1,str2);</span><br><span class="line"><span class="built_in">console</span>.log(lc);</span><br><span class="line"><span class="comment">//var arr=[];</span></span><br><span class="line"><span class="comment">//res.forEach(item=&gt;&#123;</span></span><br><span class="line">	<span class="comment">//if(item.length==lc)&#123;arr.push(item)&#125;</span></span><br><span class="line"><span class="comment">//&#125;)</span></span><br><span class="line"><span class="comment">//console.log(arr[0]);</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//function printLCS(dp, str1, str2, i, j)&#123;</span></span><br><span class="line"><span class="comment">// 	 if (i == 0 || j == 0)&#123;	 </span></span><br><span class="line"><span class="comment">// 	 	return "";</span></span><br><span class="line"><span class="comment">// 	 &#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 	 if( str1[i-1] == str2[j-1] )&#123;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 	 	return printLCS(dp, str1, str2, i-1, j-1) + str1[i-1];</span></span><br><span class="line"><span class="comment">// 	 &#125;</span></span><br><span class="line"><span class="comment">// 	 else&#123;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 		 if (dp[i][j-1] &gt; dp[i-1][j])&#123;	</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 		 	return printLCS(dp, str1, str2, i, j-1);	 </span></span><br><span class="line"><span class="comment">// 		 &#125;else&#123;	 	</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 		 	return printLCS(dp, str1, str2, i-1, j);	 </span></span><br><span class="line"><span class="comment">// 		 &#125;</span></span><br><span class="line"><span class="comment">// 	 &#125;  </span></span><br><span class="line"><span class="comment">//  &#125;</span></span><br></pre></td></tr></table></figure>
+<p>最长公共连续子串</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">var X = &quot;acacbac&quot;;</span><br><span class="line">var Y = &quot;acaccbabb&quot;;</span><br><span class="line">function lcs()&#123;</span><br><span class="line">        var maxlen = 0;</span><br><span class="line">        var maxindex = 0;</span><br><span class="line">        var c=[];</span><br><span class="line">       for(var i=0;i&lt;=X.length;i++)&#123;</span><br><span class="line">       	c[i]=[];</span><br><span class="line">       &#125;</span><br><span class="line">		c[0][0]=0;</span><br><span class="line">        for(var i=1;i&lt;=X.length;i++)&#123;</span><br><span class="line">        	//c[i-1]=[]</span><br><span class="line">            for(var j=1;j&lt;=Y.length;j++)&#123;</span><br><span class="line">                if(X[i-1] == Y[j-1])&#123;</span><br><span class="line">                    c[i][j] = c[i-1][j-1]+1;</span><br><span class="line">	                    if(c[i][j] &gt; maxlen)&#123;</span><br><span class="line">	                        maxlen = c[i][j];</span><br><span class="line">	                        maxindex = i + 1 - maxlen;</span><br><span class="line">	                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return maxlen;</span><br><span class="line">    &#125;</span><br><span class="line">console.log(lcs());</span><br></pre></td></tr></table></figure>
+ <a id="more"></a>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/算法/">算法</a></li></ul>
+
+      
+        <div id="donation_div"></div>
+
+<script src="/js/vdonate.js"></script>
+<script>
+var a = new Donate({
+  title: '打赏就不用了，哥哥不差钱', // 可选参数，打赏标题
+  btnText: '打赏支持', // 可选参数，打赏按钮文字
+  el: document.getElementById('donation_div'),
+  wechatImage: '',
+  alipayImage: ''
+});
+</script>
+      
+            
+      
+        
+	<div id="comment">
+		<!-- 来必力City版安装代码 -->
+		<div id="lv-container" data-id="city" data-uid="MTAyMC8yOTQ4MS82MDQ5">
+		<script type="text/javascript">
+		   (function(d, s) {
+		       var j, e = d.getElementsByTagName(s)[0];
+
+		       if (typeof LivereTower === 'function') { return; }
+
+		       j = d.createElement(s);
+		       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+		       j.async = true;
+
+		       e.parentNode.insertBefore(j, e);
+		   })(document, 'script');
+		</script>
+		<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+		</div>
+		<!-- City版安装代码已完成 -->
+	</div>
+
+
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/09/18/排序算法/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">
+        
+          排序算法
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/04/11/jquery学习笔记/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">Jquery学习笔记</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+<!-- Table of Contents -->
+
+  <aside id="sidebar">
+    <div id="toc" class="toc-article" style="overflow-y: scroll; max-width: 28%;">
+    <strong class="toc-title">文章目录</strong>
+    
+      <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#动态规划"><span class="nav-number">1.</span> <span class="nav-text">动态规划</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#王多鱼获得了一笔的奖金X，要求购买最少的商品把钱花光，即没有零钱剩下，否则奖金会被没收。"><span class="nav-number">1.1.</span> <span class="nav-text">王多鱼获得了一笔的奖金X，要求购买最少的商品把钱花光，即没有零钱剩下，否则奖金会被没收。</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#输入："><span class="nav-number">1.1.1.</span> <span class="nav-text">输入：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出："><span class="nav-number">1.1.2.</span> <span class="nav-text">输出：</span></a></li></ol></li></ol></li></ol>
+    
+    </div>
+  </aside>
+</section>
+        
+      </div>
+      <footer id="footer" class="site-footer">
+  
+
+  <div class="clearfix container">
+      <div class="site-info">
+	      &copy; 2019 hello world All Rights Reserved.
+          
+            <span id="busuanzi_container_site_uv">
+              本站访客数<span id="busuanzi_value_site_uv"></span>人次  
+              本站总访问量<span id="busuanzi_value_site_pv"></span>次
+            </span>
+          
+      </div>
+      <div class="site-credit">
+        Theme by <a href="https://github.com/iTimeTraveler/hexo-theme-hiero" target="_blank">hiero</a>
+      </div>
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var contentdiv = document.getElementById("content");
+
+    contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+</script>
+
+<!-- Custome JS -->
+<script src="/js/my.js"></script>
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+
+<script src="/js/scripts.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+
+  <div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+  </div>
+
+
+
+	<script async src="https://dnqof95d40fo6.cloudfront.net/atw7f8.js">
+	</script>
+
+
+
+
+
+
+  </div>
+
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js" async=""></script>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/hibiki.model.json"},"display":{"position":"right","width":150,"height":330},"mobile":{"show":true}});</script></body>
+</html>

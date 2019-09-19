@@ -13,7 +13,7 @@
   <!-- PACE Progress Bar START -->
 
   
-  <title>jquery学习笔记 | zheng</title>
+  <title>jquery学习笔记 | hello world</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   <meta name="keywords" content="jquery">
@@ -26,15 +26,13 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="Jquery学习笔记">
 <meta property="og:url" content="https://www.zheng1.xyz/2019/04/11/jquery学习笔记/index.html">
-<meta property="og:site_name" content="zheng">
+<meta property="og:site_name" content="hello world">
 <meta property="og:description" content="jquery学习笔记目录选择器操作样式出现和消失动画获取内容操作DOM事件操作属性表单及输入Ajax 1.选择器 $(‘#id’)选择id =&amp;gt; document.getElementById(‘id’)  $(‘.class’)选择class =&amp;gt; document.getElementsByClassName(‘class’)  $(‘tag’)选择标签=&amp;gt;document.">
-<meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-11T05:37:25.417Z">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-09-18T09:15:30.505Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Jquery学习笔记">
 <meta name="twitter:description" content="jquery学习笔记目录选择器操作样式出现和消失动画获取内容操作DOM事件操作属性表单及输入Ajax 1.选择器 $(‘#id’)选择id =&amp;gt; document.getElementById(‘id’)  $(‘.class’)选择class =&amp;gt; document.getElementsByClassName(‘class’)  $(‘tag’)选择标签=&amp;gt;document.">
-  
-    <link rel="alternate" href="/atom.xml" title="zheng" type="application/atom+xml">
   
   <link rel="icon" href="/css/images/favicon.ico">
   
@@ -79,15 +77,9 @@
 <script>
 var themeMenus = {};
 
-  themeMenus["/"] = "Home"; 
+  themeMenus["/"] = "首页"; 
 
-  themeMenus["/archives"] = "Archives"; 
-
-  themeMenus["/categories"] = "Categories"; 
-
-  themeMenus["/tags"] = "Tags"; 
-
-  themeMenus["/about"] = "About"; 
+  themeMenus["/about"] = "关于"; 
 
 </script>
 
@@ -101,12 +93,12 @@ var themeMenus = {};
 
           <h1 class="site-title">
             
-              <a href="/" title="zheng" rel="home"> zheng </a>
+              <a href="/" rel="home">
+                <img style="margin-bottom: 10px;" width="124px" height="124px" alt="Hike News" src="https://hexo.io/logo.svg">
+              </a>
             
           </h1>
 
-          
-            <div class="site-description">myblog</div>
           
             
           <nav id="main-navigation" class="main-navigation" role="navigation">
@@ -116,15 +108,9 @@ var themeMenus = {};
 
               <ul id="main-nav" class="nmenu sf-js-enabled">
                     
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class href="/">Home</a> </li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class href="/">首页</a> </li>
                     
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class href="/archives">Archives</a> </li>
-                    
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class href="/categories">Categories</a> </li>
-                    
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class href="/tags">Tags</a> </li>
-                    
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class href="/about">About</a> </li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class href="/about">关于</a> </li>
                     
               </ul>
             </div>
@@ -187,7 +173,7 @@ var themeMenus = {};
     <div class="article-meta">
       
 	Posted on <a href="/2019/04/11/jquery学习笔记/" class="article-date">
-	  <time datetime="2019-04-11T02:50:54.000Z" itemprop="datePublished">April 11, 2019</time>
+	  <time datetime="2019-04-11T02:50:54.000Z" itemprop="datePublished">四月 11, 2019</time>
 	</a>
 
       
@@ -288,7 +274,7 @@ document.getElementsByTagName("INPUT")[0].setAttribute("type","button");
 <li><h3 id="get-“test-php”-name-“John”-time-“2pm”-function-data-alert-data"><a href="#get-“test-php”-name-“John”-time-“2pm”-function-data-alert-data" class="headerlink" title="$.get(“test.php”, { name: “John”, time: “2pm” },function(data){alert(data)});"></a>$.get(“test.php”, { name: “John”, time: “2pm” },function(data){alert(data)});</h3><p>可以传参数，传递的数据少20k，不安全，可以从网页看到</p>
 </li>
 <li><h3 id="post"><a href="#post" class="headerlink" title="$.post()"></a>$.post()</h3><p>安全，传无限数据，</p>
-</li>
+ <a id="more"></a></li>
 </ul>
 
       
@@ -305,11 +291,11 @@ document.getElementsByTagName("INPUT")[0].setAttribute("type","button");
 <script src="/js/vdonate.js"></script>
 <script>
 var a = new Donate({
-  title: '如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作!', // 可选参数，打赏标题
-  btnText: 'Donate', // 可选参数，打赏按钮文字
+  title: '打赏就不用了，哥哥不差钱', // 可选参数，打赏标题
+  btnText: '打赏支持', // 可选参数，打赏按钮文字
   el: document.getElementById('donation_div'),
-  wechatImage: 'https://raw.githubusercontent.com/iTimeTraveler/iTimeTraveler.github.io/site/source/about/donate/images/WeChanQR.png',
-  alipayImage: 'https://raw.githubusercontent.com/iTimeTraveler/iTimeTraveler.github.io/site/source/about/donate/images/AliPayQR.jpg'
+  wechatImage: '',
+  alipayImage: ''
 });
 </script>
       
@@ -345,11 +331,15 @@ var a = new Donate({
     
 <nav id="article-nav">
   
-  
-    <a href="/2019/04/10/My-New-Post/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">My New Post</div>
+    <a href="/2019/09/18/动态规划/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">
+        
+          动态规划
+        
+      </div>
     </a>
+  
   
 </nav>
 
@@ -360,7 +350,7 @@ var a = new Donate({
 
   <aside id="sidebar">
     <div id="toc" class="toc-article" style="overflow-y: scroll; max-width: 28%;">
-    <strong class="toc-title">Contents</strong>
+    <strong class="toc-title">文章目录</strong>
     
       <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#jquery学习笔记"><span class="nav-number">1.</span> <span class="nav-text">jquery学习笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#目录"><span class="nav-number">1.0.1.</span> <span class="nav-text">目录</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-选择器"><span class="nav-number">1.1.</span> <span class="nav-text">1.选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#‘-id’"><span class="nav-number">1.1.1.</span> <span class="nav-text">$(‘#id’)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#‘-class’"><span class="nav-number">1.1.2.</span> <span class="nav-text">$(‘.class’)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#‘tag’-选择标签-gt"><span class="nav-number">1.1.3.</span> <span class="nav-text">$(‘tag’)选择标签=&gt;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#‘-id-tag’"><span class="nav-number">1.1.4.</span> <span class="nav-text">$(‘#id tag’)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-操作样式"><span class="nav-number">1.2.</span> <span class="nav-text">2.操作样式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#单个样式"><span class="nav-number">1.2.1.</span> <span class="nav-text">单个样式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#多个样式"><span class="nav-number">1.2.2.</span> <span class="nav-text">多个样式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#‘-id’-addClass-‘class’-添加类"><span class="nav-number">1.2.3.</span> <span class="nav-text">$(‘#id’)addClass(‘class’)添加类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#‘-id’-removeClass-‘class’-移除类"><span class="nav-number">1.2.4.</span> <span class="nav-text">$(‘#id’)removeClass(‘class’)移除类</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-出现和消失动画"><span class="nav-number">1.3.</span> <span class="nav-text">3.出现和消失动画</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#39-id-39-hide-和-39-id-39-show"><span class="nav-number">1.3.1.</span> <span class="nav-text">$(&#39;#id&#39;).hide() 和 $(&#39;#id&#39;).show()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#39-id-39-fadeOut-和-39-id-39-fadein-可设置时间"><span class="nav-number">1.3.2.</span> <span class="nav-text">$(&#39;#id&#39;).fadeOut() 和 $(&#39;#id&#39;).fadein(可设置时间)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#39-id-39-slideUp-可设置时间-隐藏"><span class="nav-number">1.3.3.</span> <span class="nav-text">$(&#39;#id&#39;).slideUp(可设置时间) 隐藏</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#39-id-39-slideDown-显示"><span class="nav-number">1.3.4.</span> <span class="nav-text">$(&#39;#id&#39;).slideDown() 显示</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-获取内容"><span class="nav-number">1.4.</span> <span class="nav-text">4.获取内容</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#‘-id’-text"><span class="nav-number">1.4.1.</span> <span class="nav-text">$(‘#id’).text()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#‘-id’-text-‘替换的内容’"><span class="nav-number">1.4.2.</span> <span class="nav-text">$(‘#id’).text(‘替换的内容’)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#‘-id’-html-可以获取到里面的标签和内容"><span class="nav-number">1.4.3.</span> <span class="nav-text">$(‘#id’).html()可以获取到里面的标签和内容</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-操作DOM"><span class="nav-number">1.5.</span> <span class="nav-text">5.操作DOM</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#追加元素"><span class="nav-number">1.5.1.</span> <span class="nav-text">追加元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#向前插入元素"><span class="nav-number">1.5.2.</span> <span class="nav-text">向前插入元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#移除元素"><span class="nav-number">1.5.3.</span> <span class="nav-text">移除元素</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-事件"><span class="nav-number">1.6.</span> <span class="nav-text">6.事件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#‘-id’-on-‘click’-function"><span class="nav-number">1.6.1.</span> <span class="nav-text">$(‘#id’).on(‘click’,function(){})</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#或者-‘-id’-click-function"><span class="nav-number">1.6.2.</span> <span class="nav-text">或者$(‘#id’).click(function(){})</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#‘-id’-on-‘mouseenter’-function"><span class="nav-number">1.6.3.</span> <span class="nav-text">$(‘#id’).on(‘mouseenter’,function(){})</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#‘-id’-on-‘mouseleave’-function"><span class="nav-number">1.6.4.</span> <span class="nav-text">$(‘#id’).on(‘mouseleave’,function(){})</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-操作属性"><span class="nav-number">1.7.</span> <span class="nav-text">7.操作属性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#‘-id’-attr-‘href’-’www-zheng1-xyz’-修改显性属性"><span class="nav-number">1.7.1.</span> <span class="nav-text">$(‘#id’).attr(‘href’,’www.zheng1.xyz’) 修改显性属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#‘-id’-prop-‘href’-’www-zheng1-xyz’-修改隐性属性"><span class="nav-number">1.7.2.</span> <span class="nav-text">$(‘#id’).prop(‘href’,’www.zheng1.xyz’) 修改隐性属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#‘-id’-removeattr-‘href’-删除属性"><span class="nav-number">1.7.3.</span> <span class="nav-text">$(‘#id’).removeattr(‘href’)删除属性</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-表单及输入"><span class="nav-number">1.8.</span> <span class="nav-text">8.表单及输入</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#‘-id’-val-‘修改内容’-获取及修改input内容"><span class="nav-number">1.8.1.</span> <span class="nav-text">\$(‘#id’).val(‘修改内容’) 获取及修改input内容</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#‘-id’-focus-和-‘-id’-blur-表单点击和不点击触发"><span class="nav-number">1.8.2.</span> <span class="nav-text">\$(‘#id’).focus()和$(‘#id’).blur() 表单点击和不点击触发</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-Ajax"><span class="nav-number">1.9.</span> <span class="nav-text">9.Ajax</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#ajax全面的功能，"><span class="nav-number">1.9.1.</span> <span class="nav-text">$ajax全面的功能，</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#load-方法"><span class="nav-number">1.9.2.</span> <span class="nav-text">load() 方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#get-“test-php”-name-“John”-time-“2pm”-function-data-alert-data"><span class="nav-number">1.9.3.</span> <span class="nav-text">$.get(“test.php”, { name: “John”, time: “2pm” },function(data){alert(data)});</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#post"><span class="nav-number">1.9.4.</span> <span class="nav-text">$.post()</span></a></li></ol></li></ol>
     
@@ -374,7 +364,7 @@ var a = new Donate({
 
   <div class="clearfix container">
       <div class="site-info">
-	      &copy; 2019 zheng All Rights Reserved.
+	      &copy; 2019 hello world All Rights Reserved.
           
             <span id="busuanzi_container_site_uv">
               本站访客数<span id="busuanzi_value_site_uv"></span>人次  
@@ -403,12 +393,6 @@ var a = new Donate({
     <!-- <nav id="mobile-nav">
   
     <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-    <a href="/categories" class="mobile-nav-link">Categories</a>
-  
-    <a href="/tags" class="mobile-nav-link">Tags</a>
   
     <a href="/about" class="mobile-nav-link">About</a>
   
